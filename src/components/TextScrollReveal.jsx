@@ -67,6 +67,8 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// import MaskCursor from "./MaskCursor";
+
 const TextScrollReveal = () => {
   const textRevealRef = useRef(null);
   const h2Ref = useRef(null);
@@ -116,14 +118,15 @@ const TextScrollReveal = () => {
             and UI/UX Designer dedicated to creating engaging digital
             experiences. With expertise in React.js, Next.js, and JavaScript, I
             develop dynamic and responsive web applications that meet user needs
-            and business goals. I utilize modern tools such as Tailwind CSS and
+            and business goals.
+             {/* I utilize modern tools such as Tailwind CSS and
             GSAP, and I have experience in building real-time applications,
             including chat apps and collaborative tools, ensuring optimal
             performance and user interaction. My interest in design extends to
             3D animations using Three.js, enabling me to push the boundaries of
             web capabilities. I value collaboration and invite you to connect
             with me to explore potential opportunities for creating exceptional
-            digital solutions together.
+            digital solutions together. */}
             {/* Welcome to my portfolio. My name is Kumar Abhishek, and I am a
             Front-End Developer and UI/UX Designer committed to transforming
             concepts into engaging digital experiences. I possess a solid
@@ -143,7 +146,9 @@ const TextScrollReveal = () => {
             opportunities for collaboration. */}
           </h2>
         </div>
+        
       </div>
+      {/* <MaskCursor /> */}
       {/* <div className="three"></div> */}
     </div>
   );
