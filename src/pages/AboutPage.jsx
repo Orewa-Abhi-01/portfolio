@@ -1,11 +1,14 @@
 import React from "react";
 import TextScrollReveal from "../components/TextScrollReveal";
+import Marquee from "../components/Marquee";
 
 const AboutPage = () => {
   return (
-    <div>
-      <section>
-        <h1>About Page</h1>
+    <div >
+      <section >
+        <div className="marqueee   bg-[#ec4e39]">
+        <Marquee />
+        </div>
         <TextScrollReveal />
         
       </section>

@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 const ZoomScroll = () => {
   const zoomRef = useRef(null);
   const zoomContainerRef = useRef(null);
@@ -66,18 +65,16 @@ const ZoomScroll = () => {
         <div className="my-name">
           <div className="name-container  gap-2">
             <div className="name  " ref={h1Ref}>
-              <h1 className="zoom-text">
+              <h1 className="zoom-text  cursor-pointer">
                 abhishek<sup></sup>
               </h1>
             </div>
-            
-            <div className="my-desc flex justify-center items-center text-xl font-bold text-white rounded-lg w-[25%] font-[Syne] p">
-              aka Abhi A Creative <br /> Frontend Developer from Chandigarh,
-              India.
+
+            <div className="my-desc flex flex-col justify-center items-center text-2xl font-bold text-white rounded-lg w-[25%] font-[Syne] p">
+              aka Abhi. A Creative <br />{" "}
+              <span className="text-[#ec4e39] animate-bounce">Frontend Developer </span> from
+              Chandigarh, India.
             </div>
-            {/* <div className="logo absolute z-9999" ref={imgRef}>
-              <img src="/A_logo.png" alt="" />
-            </div> */}
           </div>
         </div>
       </div>
@@ -87,8 +84,3 @@ const ZoomScroll = () => {
 
 export default ZoomScroll;
 
-{
-  /* <h1 className="zoom-text">Hello, I'm</h1>
-<h1 className="zoom-text">John Doe</h1>
-<p className="zoom-description">A passionate web developer.</p> */
-}
